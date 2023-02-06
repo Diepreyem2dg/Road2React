@@ -170,6 +170,8 @@
 //         console.log('You have\'nt rolled the dice');
 // }
 
+//L
+
 //WHILE LOOP
 // let amount = 10;
 
@@ -229,74 +231,75 @@
 // console.log(newArray);
 
 
-// //Mini-project1 (STAFF THAT ARE SINGLE AND READY TO MINGLE): *Applying Arrays with FOR loop*
-// const femaleStaff = ['Eno', 'Amaka', 'Godslove', 'Shola', 'Elizabeth', 'Daniella'];
-// const maleStaff = ['Ugo', 'Wale', 'Seyi', 'Gideon', 'Diepreye', 'Miracle'];
-// let mingle = [];
+//Mini-project1 (STAFF THAT ARE SINGLE AND READY TO MINGLE): *Applying Arrays with FOR loop*
+const femaleStaff = ['Eno', 'Amaka', 'Godslove', 'Shola', 'Elizabeth', 'Daniella'];
+const maleStaff = ['Ugo', 'Wale', 'Seyi', 'Gideon', 'Diepreye', 'Miracle'];
+let mingle = [];
 
-// //for loop
-// for(i = 0; i < femaleStaff.length; i++){
-//     for(i = 0; i < maleStaff.length; i++){
-//         mingle.push(`${femaleStaff[i]} ${maleStaff[i]}`);
-//     }
-// }
-// console.log(mingle);
-
-
-
-// //A WHOLE DIFFERENT EXERCISE
-// const snacks = [20, 40, 100, 30];
-// const food = [10, 40, 50];
-
-// function calculateTotal(arr){
-//     let total = 0;
-//     for(let i = 0; i < arr.length; i++) {
-//         total += arr[i];
-//     }
-//     if(total > 100){
-//         console.log(`Whoa! You are spending way too much`);
-//         return total;
-//     }
-//     console.log(`You are good, total is less than 100`);
-//     return total;
-// }
-
-// const snacksTotal = calculateTotal(snacks);
-// const foodTotal = calculateTotal(food);
-// const randomTotal = calculateTotal([30, 40, 50, 80]);
-
-// console.log({
-//     snacks: snacksTotal,
-//     food: foodTotal,
-//     random: randomTotal,
-// });
+//for loop
+for(i = 0; i < femaleStaff.length; i++){
+    for(i = 0; i < maleStaff.length; i++){
+        mingle.push(`${femaleStaff[i]} ${maleStaff[i]}`);
+    }
+}
+console.log(mingle);
 
 
 
-// //Other exercises from the class
+//A WHOLE DIFFERENT EXERCISE
+const snacks = [20, 40, 100, 30];
+const food = [10, 40, 50];
+
+function calculateTotal(arr){
+    let total = 0;
+    for(let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+    if(total > 100){
+        console.log(`Whoa! You are spending way too much`);
+        return total;
+    }
+    console.log(`You are good, total is less than 100`);
+    return total;
+}
+
+const snacksTotal = calculateTotal(snacks);
+const foodTotal = calculateTotal(food);
+const randomTotal = calculateTotal([30, 40, 50, 80]);
+
+console.log({
+    snacks: snacksTotal,
+    food: foodTotal,
+    random: randomTotal,
+});
 
 
-// const globalnumber = 5;
 
-// function add(num1, num2){
-//     const result = num1 + num2 + globalnumber;
-//     return result;
-// }
-
-// console.log(add(4, 3));
+//Other exercises from the class
 
 
-// function morning(name){
-//     return `Good morining ${name.toUpperCase()}`;
-// }
+const globalnumber = 5;
 
-// function greet(name, morning){
-//     const myname = 'Diepreye';
-//     console.log(`${morning(name)}, my name is ${myname}`);
-// }
+function add(num1, num2){
+    const result = num1 + num2 + globalnumber;
+    return result;
+}
 
-// greet('Daniella', morning);
-// greet('God\'s love', morning);
+console.log(add(4, 3));
+
+// Greeting exercise
+
+function morning(name){
+    return `Good morining ${name.toUpperCase()}`;
+}
+
+function greet(name, morning){
+    const myname = 'Diepreye';
+    console.log(`${morning(name)}, my name is ${myname}`);
+}
+
+greet('Daniella', morning);
+greet('God\'s love', morning);
 
 function morning(name){
    return `Good morning ${name.toUpperCase()}`;
